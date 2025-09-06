@@ -1,0 +1,68 @@
+### Build ###
+.gradle/
+build/
+out/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### IDEs ###
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+.run/
+
+# STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+### OS ###
+.DS_Store
+Thumbs.db
+Icon?
+
+### Logs & Dumps ###
+*.log
+*.pid
+hs_err_pid*
+replay_pid*
+*.hprof
+
+### Coverage & Reports ###
+.jacoco/
+**/build/reports/
+**/build/test-results/
+*.exec
+
+### Env & Secrets ###
+.env
+.env.*
+*.keystore
+*.jks
+*.pem
+*.p12
+*.crt
+
+# Spring profiles (공통 application.yml 제외, 민감한 건 제외)
+src/main/resources/application-*.yml
+src/main/resources/application-*.properties
